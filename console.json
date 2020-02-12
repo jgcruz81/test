@@ -1,0 +1,209 @@
+{
+    "_id": "Test:1:936",
+    "_rev": "2",
+    "candidateStarterGroupIdExpressions": [],
+    "candidateStarterUserIdExpressions": [],
+    "category": "http://www.activiti.org/processdef",
+    "deploymentId": "932",
+    "description": "test",
+    "eventSupport": {},
+    "executionListeners": {
+        "end": [
+            {}
+        ]
+    },
+    "graphicalNotationDefined": true,
+    "hasStartFormKey": true,
+    "historyLevel": null,
+    "ioSpecification": null,
+    "key": "Test",
+    "laneSets": [],
+    "name": "Test",
+    "participantProcess": null,
+    "processDiagramResourceName": "Users/juancruz/Downloads/Test2.Test.png",
+    "properties": {
+        "initiatorVariableName": "startUserId",
+        "documentation": "test"
+    },
+    "resourceName": "Users/juancruz/Downloads/Test2.bpmn20.xml",
+    "revisionNext": 3,
+    "startFormHandler": {
+        "deploymentId": "932",
+        "formKey": {
+            "expressionText": "ok.js"
+        },
+        "formPropertyHandlers": [
+            {
+                "defaultExpression": null,
+                "id": "userName",
+                "name": "Username",
+                "readable": true,
+                "required": true,
+                "type": {
+                    "mimeType": "text/plain",
+                    "name": "string"
+                },
+                "variableExpression": null,
+                "variableName": null,
+                "writable": true
+            },
+            {
+                "defaultExpression": null,
+                "id": "FirstName",
+                "name": "First Name",
+                "readable": true,
+                "required": false,
+                "type": {
+                    "mimeType": "text/plain",
+                    "name": "string"
+                },
+                "variableExpression": null,
+                "variableName": null,
+                "writable": true
+            },
+            {
+                "defaultExpression": null,
+                "id": "LastName",
+                "name": "Last Name",
+                "readable": true,
+                "required": false,
+                "type": {
+                    "mimeType": "text/plain",
+                    "name": "string"
+                },
+                "variableExpression": null,
+                "variableName": null,
+                "writable": true
+            },
+            {
+                "defaultExpression": null,
+                "id": "Mail",
+                "name": "Mail",
+                "readable": true,
+                "required": false,
+                "type": {
+                    "mimeType": "text/plain",
+                    "name": "string"
+                },
+                "variableExpression": null,
+                "variableName": null,
+                "writable": true
+            }
+        ]
+    },
+    "suspended": false,
+    "suspensionState": 1,
+    "taskDefinitions": {
+        "decideApprovalTask": {
+            "assigneeExpression": {
+                "expressionText": "${startUserId}"
+            },
+            "candidateGroupIdExpressions": [],
+            "candidateUserIdExpressions": [],
+            "categoryExpression": null,
+            "descriptionExpression": null,
+            "dueDateExpression": null,
+            "key": "decideApprovalTask",
+            "nameExpression": {
+                "expressionText": "Approve"
+            },
+            "ownerExpression": null,
+            "priorityExpression": null,
+            "taskFormHandler": {
+                "deploymentId": "932",
+                "formKey": null,
+                "formPropertyHandlers": [
+                    {
+                        "defaultExpression": null,
+                        "id": "testProp",
+                        "name": "testProp",
+                        "readable": true,
+                        "required": false,
+                        "type": {
+                            "mimeType": "text/plain",
+                            "name": "string"
+                        },
+                        "variableExpression": null,
+                        "variableName": null,
+                        "writable": true
+                    }
+                ]
+            },
+            "taskListeners": {
+                "assignment": [
+                    {}
+                ],
+                "create": [
+                    {}
+                ]
+            }
+        }
+    },
+    "tenantId": "",
+    "variables": {},
+    "version": 1,
+    "formResourceKey": "ok.js",
+    "formGenerationTemplate": "{\n\tname: \"Sample\",\n\tprops: ['processDefinition', 'taskDefinition', 'variables'],\n\tdata () {\n\t\treturn {\n\t\t\tvar1: \"one\",\n\n\t\t}\n\t},\n\tmethods: {\n\n\t},\n\tcreated (){\n\t\tconsole.log(this.processDefinition);\n\n\t},\n\ttemplate: `\n\t\t<h1>\n\t\t\tk\n\t\t</h1>\n\t`\n}",
+    "formProperties": [
+        {
+            "readable": true,
+            "variableName": null,
+            "defaultExpression": null,
+            "name": "Username",
+            "_id": "userName",
+            "type": {
+                "datePattern": null,
+                "values": null,
+                "name": "string"
+            },
+            "variableExpression": null,
+            "required": true,
+            "writable": true
+        },
+        {
+            "readable": true,
+            "variableName": null,
+            "defaultExpression": null,
+            "name": "First Name",
+            "_id": "FirstName",
+            "type": {
+                "datePattern": null,
+                "values": null,
+                "name": "string"
+            },
+            "variableExpression": null,
+            "required": false,
+            "writable": true
+        },
+        {
+            "readable": true,
+            "variableName": null,
+            "defaultExpression": null,
+            "name": "Last Name",
+            "_id": "LastName",
+            "type": {
+                "datePattern": null,
+                "values": null,
+                "name": "string"
+            },
+            "variableExpression": null,
+            "required": false,
+            "writable": true
+        },
+        {
+            "readable": true,
+            "variableName": null,
+            "defaultExpression": null,
+            "name": "Mail",
+            "_id": "Mail",
+            "type": {
+                "datePattern": null,
+                "values": null,
+                "name": "string"
+            },
+            "variableExpression": null,
+            "required": false,
+            "writable": true
+        }
+    ]
+}
